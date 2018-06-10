@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.dpeuscher.movierating</string>
+	<key>connections</key>
+	<dict>
+		<key>1AB19BA8-E108-4397-B917-88B7DC937115</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>91F6EA1E-2584-43E4-9995-8D2945EA33C4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9730DF32-6E6F-428C-A7B9-4F3F9D6C7D4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8BB6135F-1A6B-46F5-A7CD-93CC4222A971</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FDABFBFA-6FD6-43C0-A68F-87837567A52E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16D24F63-87BE-4A6A-8661-98469A50F399</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Dominik Peuscher</string>
+	<key>description</key>
+	<string>Keep track of movies I watched and my opinion about them</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Movie-Rating</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	tell application "Numbers"		open do shell script "echo `pwd`/$filename"		tell document 1			set the selectedSheet to (the first sheet whose name is (do shell script "echo $sheetname"))			tell selectedSheet				set the selectedTable to (the first table whose name is (do shell script "echo $tablename"))				tell selectedTable					add row below last row					tell cell 1 of last row to set value to do shell script "echo $movie"					tell cell 2 of last row to set value to do shell script "echo $currentdate"
+					tell cell 3 of last row to set value to do shell script "echo $category"					tell cell 4 of last row to set value to do shell script "echo $stars"				end tell			end tell		end tell	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>91F6EA1E-2584-43E4-9995-8D2945EA33C4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>keyword</key>
+				<string>movie-rating</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>$alfredArgv = "bin/console movie-rating {query}";
+
+include 'bin/alfred.php';
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Here you can rate a movie you just watched</string>
+				<key>title</key>
+				<string>Rate the currently watched movie</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1AB19BA8-E108-4397-B917-88B7DC937115</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>script</key>
+				<string>$alfredArgv = "bin/console config -x {query}";
+
+include 'bin/alfred.php';</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8BB6135F-1A6B-46F5-A7CD-93CC4222A971</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>100</integer>
+				<key>keyword</key>
+				<string>movie-rating:config</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>$alfredArgv = "bin/console config {query}";
+
+include 'bin/alfred.php';
+</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Configure the Movie Rating tool</string>
+				<key>title</key>
+				<string>Movie Rating Config</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9730DF32-6E6F-428C-A7B9-4F3F9D6C7D4E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>movies.numbers</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>16D24F63-87BE-4A6A-8661-98469A50F399</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>movie-ratings</string>
+				<key>subtext</key>
+				<string>Numbers app will be launched</string>
+				<key>text</key>
+				<string>Show my movie ratings</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>FDABFBFA-6FD6-43C0-A68F-87837567A52E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>16D24F63-87BE-4A6A-8661-98469A50F399</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+		<key>1AB19BA8-E108-4397-B917-88B7DC937115</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>8BB6135F-1A6B-46F5-A7CD-93CC4222A971</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>91F6EA1E-2584-43E4-9995-8D2945EA33C4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>350</integer>
+			<key>ypos</key>
+			<integer>20</integer>
+		</dict>
+		<key>9730DF32-6E6F-428C-A7B9-4F3F9D6C7D4E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>FDABFBFA-6FD6-43C0-A68F-87837567A52E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>300</integer>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/dpeuscher/</string>
+</dict>
+</plist>
