@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "dpeuscher/alfred-symfony-tools",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dpeuscher/alfred-symfony-tools.git",
-                "reference": "4ae57b169c8fb39aa612a4b8011a49f43123048c"
+                "reference": "b9aaee670f384037c273a9d9b60812a981682092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dpeuscher/alfred-symfony-tools/zipball/4ae57b169c8fb39aa612a4b8011a49f43123048c",
-                "reference": "4ae57b169c8fb39aa612a4b8011a49f43123048c",
+                "url": "https://api.github.com/repos/dpeuscher/alfred-symfony-tools/zipball/b9aaee670f384037c273a9d9b60812a981682092",
+                "reference": "b9aaee670f384037c273a9d9b60812a981682092",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-06-10 19:15:07"
+            "time": "2018-06-17 15:34:56"
         },
         {
             "name": "joetannenbaum/alfred-workflow",
