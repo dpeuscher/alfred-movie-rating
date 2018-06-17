@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6575a454-48ee-4f5f-93d2-a9d7bf214cd7" name="Default" comment="" />
+    <list default="true" id="6575a454-48ee-4f5f-93d2-a9d7bf214cd7" name="Default" comment="Update PHP Version check text">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/user.workflow.CA05BB9D-747B-4205-B020-FD36F02B7EBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/user.workflow.CA05BB9D-747B-4205-B020-FD36F02B7EBD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,16 +14,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="32">
-                <caret line="2" column="107" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -41,14 +46,16 @@
         <option value="$PROJECT_DIR$/bin/console" />
         <option value="$PROJECT_DIR$/src/Kernel.php" />
         <option value="$PROJECT_DIR$/src/Command/ConfigureCommand.php" />
-        <option value="$PROJECT_DIR$/bin/alfred.php" />
         <option value="$PROJECT_DIR$/vendor/dpeuscher/alfred-symfony-tools/src/Command/ConfigureCommand.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Command/MovieRatingCommand.php" />
         <option value="$PROJECT_DIR$/src/Command/FileCommand.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.env.dist" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/bin/alfred.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -64,7 +71,36 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/makbari/dot-env-editor" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/joetannenbaum/alfred-workflow" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/dpeuscher/alfred-symfony-tools" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/mhndev/config" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
     <option name="y" value="22" />
@@ -132,6 +168,9 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/config" />
@@ -173,7 +212,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528655687992</updated>
-      <workItem from="1528655689291" duration="4111000" />
+      <workItem from="1528655689291" duration="4369000" />
+      <workItem from="1529226821137" duration="6680000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1528659706602</created>
@@ -189,46 +229,74 @@
       <option name="project" value="LOCAL" />
       <updated>1528659782986</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add workflow">
+      <created>1528659847515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528659847515</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add basic parameters to .env.dist file">
+      <created>1529227266974</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1529227266974</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update composer.lock, Add PHP_VERSION check">
+      <created>1529249885423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529249885423</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update PHP Version check text">
+      <created>1529250149790</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529250149790</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4111000" />
+    <option name="totallyTimeSpent" value="11049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="22" width="1383" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32971016" />
-      <window_info anchor="right" id="IDEtalk" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5138445" side_tool="true" weight="0.32155797" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="right" id="IDEtalk" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5138445" side_tool="true" weight="0.32058048" />
+      <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48296058" weight="0.5343008" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.48615548" weight="0.39841688" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.48296058" visible="true" weight="0.5343008" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.62401056" />
       <window_info anchor="right" id="Remote Host" order="3" weight="0.21816881" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3303505" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="IDEtalk Messages" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3303505" />
+      <window_info anchor="bottom" id="Docker" order="18" />
+      <window_info anchor="bottom" id="IDEtalk Messages" order="18" />
       <window_info anchor="right" id="Database" order="4" weight="0.23109691" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49201277" weight="0.44293478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24973376" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.48615548" weight="0.49472296" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32971016" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.48615548" weight="0.49472296" />
       <window_info anchor="bottom" id="Thumbnails" order="0" visible="true" weight="0.4795784" />
-      <window_info anchor="bottom" id="Pomodoro" order="14" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.32971016" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Analyze Dataflow to" order="15" weight="0.32971016" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="16" weight="0.32971016" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.29257247" />
-      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49201277" weight="0.44293478" />
+      <window_info anchor="bottom" id="Pomodoro" order="14" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32971016" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Analyze Dataflow to" order="15" weight="0.32971016" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +308,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Reference alfred-symfony-tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reference alfred-symfony-tools" />
+    <MESSAGE value="Add workflow" />
+    <MESSAGE value="Add basic parameters to .env.dist file" />
+    <MESSAGE value="Update composer.lock, Add PHP_VERSION check" />
+    <MESSAGE value="Update PHP Version check text" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update PHP Version check text" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -274,12 +346,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1AB19BA8-E108-4397-B917-88B7DC937115.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/9730DF32-6E6F-428C-A7B9-4F3F9D6C7D4E.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -289,9 +355,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -303,18 +366,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/dotenveditor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.dist">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/dpeuscher/alfred-symfony-tools/src/Command/ConfigureCommand.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -334,13 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="291" selection-start-line="291" selection-end-line="291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/alfred.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -368,33 +418,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command/FileCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/symfony.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command/FileCommand.php" />
     <entry file="file://$PROJECT_DIR$/info.plist">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3643">
@@ -416,6 +440,41 @@
             <caret line="2" column="107" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="107" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/alfred.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
