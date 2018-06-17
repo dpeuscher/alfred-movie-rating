@@ -19,8 +19,8 @@ set_time_limit(0);
 if (version_compare(PHP_VERSION,'7.1') < 0) {
     echo '{"items": [
     {
-        "title": "Please install at least PHP 7.1",
-        "subtitle": "You need a PHP version of at least 7.1. You have '.PHP_VERSION.' installed. Please upgrade.",
+        "title": "Please upgrade to at least PHP 7.1",
+        "subtitle": "You have '.PHP_VERSION.' installed. Please upgrade PHP or your macOS to at least \"High Sierra\".",
         "valid": false,
     }]}';
     exit;
