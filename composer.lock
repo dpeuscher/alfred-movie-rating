@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "57898fcbae6c586fee43c8004531c903",
     "content-hash": "eea99d25f052d02e44644141f505b416",
     "packages": [
         {
@@ -46,7 +45,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-06-17 15:34:56"
+            "time": "2018-06-17T15:34:56+00:00"
         },
         {
             "name": "joetannenbaum/alfred-workflow",
@@ -85,7 +84,7 @@
                 }
             ],
             "description": "PHP helper for creating Alfred Workflows.",
-            "time": "2017-03-29 03:08:45"
+            "time": "2017-03-29T03:08:45+00:00"
         },
         {
             "name": "makbari/dot-env-editor",
@@ -125,7 +124,7 @@
                 }
             ],
             "description": "An editor for changing dotEnv file content",
-            "time": "2017-09-27 07:11:40"
+            "time": "2017-09-27T07:11:40+00:00"
         },
         {
             "name": "mhndev/config",
@@ -182,7 +181,7 @@
                 "yaml",
                 "yml"
             ],
-            "time": "2017-03-30 09:33:17"
+            "time": "2017-03-30T09:33:17+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -260,7 +259,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19 01:22:40"
+            "time": "2017-06-19T01:22:40+00:00"
         },
         {
             "name": "psr/cache",
@@ -306,7 +305,7 @@
                 "psr",
                 "psr-6"
             ],
-            "time": "2016-08-06 20:24:11"
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/container",
@@ -355,7 +354,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2017-02-14 16:28:37"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/log",
@@ -402,7 +401,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -450,7 +449,7 @@
                 "psr-16",
                 "simple-cache"
             ],
-            "time": "2017-10-23 01:57:42"
+            "time": "2017-10-23T01:57:42+00:00"
         },
         {
             "name": "symfony/cache",
@@ -519,7 +518,7 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2018-05-16 14:33:22"
+            "time": "2018-05-16T14:33:22+00:00"
         },
         {
             "name": "symfony/config",
@@ -582,7 +581,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16 14:33:22"
+            "time": "2018-05-16T14:33:22+00:00"
         },
         {
             "name": "symfony/console",
@@ -650,7 +649,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30 07:26:09"
+            "time": "2018-05-30T07:26:09+00:00"
         },
         {
             "name": "symfony/debug",
@@ -706,7 +705,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16 14:33:22"
+            "time": "2018-05-16T14:33:22+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -777,7 +776,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-25 14:55:38"
+            "time": "2018-05-25T14:55:38+00:00"
         },
         {
             "name": "symfony/dotenv",
@@ -834,7 +833,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-05-30 07:26:09"
+            "time": "2018-05-30T07:26:09+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -897,7 +896,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-06 07:35:57"
+            "time": "2018-04-06T07:35:57+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -947,7 +946,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30 07:26:09"
+            "time": "2018-05-30T07:26:09+00:00"
         },
         {
             "name": "symfony/finder",
@@ -996,20 +995,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16 14:33:22"
+            "time": "2018-05-16T14:33:22+00:00"
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.80",
+            "version": "v1.0.84",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "729aee08d62b47224e85b83c97e2824ff7d1735e"
+                "reference": "7ede6446afac01e6e381db8c8c6fddb7c05a2aa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/729aee08d62b47224e85b83c97e2824ff7d1735e",
-                "reference": "729aee08d62b47224e85b83c97e2824ff7d1735e",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/7ede6446afac01e6e381db8c8c6fddb7c05a2aa7",
+                "reference": "7ede6446afac01e6e381db8c8c6fddb7c05a2aa7",
                 "shasum": ""
             },
             "require": {
@@ -1042,7 +1041,8 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2018-05-02 19:08:56"
+            "description": "Composer plugin for Symfony",
+            "time": "2018-07-19T06:01:11+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -1157,7 +1157,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30 09:26:42"
+            "time": "2018-05-30T09:26:42+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -1211,7 +1211,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-25 14:55:38"
+            "time": "2018-05-25T14:55:38+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -1298,7 +1298,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30 12:52:34"
+            "time": "2018-05-30T12:52:34+00:00"
         },
         {
             "name": "symfony/lts",
@@ -1391,7 +1391,7 @@
             ],
             "description": "Enforces Long Term Supported versions of Symfony components",
             "homepage": "https://symfony.com",
-            "time": "2018-04-03 05:04:16"
+            "time": "2018-04-03T05:04:16+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1450,7 +1450,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2018-04-26 10:06:28"
+            "time": "2018-04-26T10:06:28+00:00"
         },
         {
             "name": "symfony/routing",
@@ -1528,7 +1528,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2018-05-30 07:26:09"
+            "time": "2018-05-30T07:26:09+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1587,7 +1587,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-05-30 07:26:09"
+            "time": "2018-05-30T07:26:09+00:00"
         }
     ],
     "packages-dev": [],
